@@ -9,16 +9,18 @@
 </head>
 
 <body bgcolor="#8A2BE2">
-    <form action="mailto:destinatario@gmail.com subject=Contato via site pessoal" enctype="multipart/form-data" method="post">
+    <form action="mailto:destinatario@gmail.com subject=Contato via site pessoal" enctype="text/plain" method="post">
     <label for="visitante">Seu nome</label>
         <input type="text" name="visitante" placeholder="Informe seu Nome" />
         <br><br>
         <label for="email">E-mail</label>
-        <input type="text" name="visitante" placeholder="Informe seu Email">
+        <input type="text" name="visitante" placeholder="Informe seu Email" required>
         <br/><br/>
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" cols="30" rows="20"></textarea>
+        <textarea name="mensagem" cols="30" rows="20" required></textarea>
         <hr/>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar Campos"/>
 
 </body>
 
